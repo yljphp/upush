@@ -1,0 +1,43 @@
+{
+    "name": "yljphp/upush",
+    "keywords": [
+        "umeng",
+        "友盟",
+        "U-Push",
+        "SDK",
+        "PHP"
+    ],
+    "description": "友盟推送",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yljphp",
+            "email": "yljphp@gmail.com"
+        },
+        {
+            "name": "hedeqiang",
+            "email": "laravel_code@163.com"
+        },
+        {
+            "name": "housemecn",
+            "email": "houseme@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.3|^7.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yljphp\\UPush\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yljphp\\UPush\\PushServiceProvider"
+            ]
+        }
+    }
+}
